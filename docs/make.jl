@@ -16,9 +16,6 @@ makedocs(;
         "Home" => "index.md",
         "Pluto example" => "pluto_example.md"
     ],
-    options = Dict(
-            "base" => "/EDUC_BiDiM_IRM/"  # <--- CRUCIAL pour GitHub Pages !
-        )
 )
 
 DocumenterVitepress.deploydocs(;
