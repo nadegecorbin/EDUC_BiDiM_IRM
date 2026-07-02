@@ -16,10 +16,13 @@ makedocs(;
         "Home" => "index.md",
         "Pluto example" => "pluto_example.md"
     ],
+    options = Dict(
+            "base" => "/EDUC_BiDiM_IRM/"  # <--- CRUCIAL pour GitHub Pages !
+        )
 )
 
 DocumenterVitepress.deploydocs(;
-    repo = "github.com/CRMSB/EDUC_BiDiM_IRM.jl",
+    repo = "github.com/CRMSB/EDUC_BiDiM_IRM.git",
     target = joinpath(@__DIR__, "build"),
     branch = "gh-pages",
     devbranch = "main",
