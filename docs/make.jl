@@ -1,5 +1,5 @@
 using EDUC_BiDiM_IRM
-using Documenter
+using Documenter, DocumenterVitepress
 
 DocMeta.setdocmeta!(EDUC_BiDiM_IRM, :DocTestSetup, :(using EDUC_BiDiM_IRM); recursive=true)
 
@@ -7,17 +7,20 @@ makedocs(;
     modules=[EDUC_BiDiM_IRM],
     authors="aTrotier <a.trotier@gmail.com> and contributors",
     sitename="EDUC_BiDiM_IRM.jl",
-    format=Documenter.HTML(;
-        canonical="https://aTrotier.github.io/EDUC_BiDiM_IRM.jl",
-        edit_link="main",
-        assets=String[],
+    format = DocumenterVitepress.MarkdownVitepress(
+        repo = "https://CRMSB.github.io/EDUC_BiDiM_IRM.jl",
+        devbranch = "main", # or master, trunk, ...
+        devurl = "dev",
     ),
     pages=[
         "Home" => "index.md",
     ],
 )
 
-deploydocs(;
-    repo="github.com/aTrotier/EDUC_BiDiM_IRM.jl",
-    devbranch="main",
+DocumenterVitepress.deploydocs(;
+    repo = "CRMSB.github.io/EDUC_BiDiM_IRM.jl",
+    target = joinpath(@__DIR__, "build"),
+    branch = "gh-pages",
+    devbranch = "main",
+    push_preview = true,
 )
