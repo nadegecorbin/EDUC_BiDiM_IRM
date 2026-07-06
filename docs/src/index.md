@@ -1,12 +1,22 @@
-# Master 2 : Biomedical MRI course
+```@raw html
+<div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
+  <img src="./assets/logo_UB.png" alt="Logo UB" width="250">
+  <img src="./assets/LOGO_CNRS_BLEU.png" alt="Logo CNRS" width="100">
+  <img src="./assets/logo_rmsb.png" alt="Logo CRMSB" width="100">
+</div>
+```
+
+```@raw html
+<div style="text-align:center">
+  <p style="font-weight:bold; font-size: 35px; font-variant: small-caps; margin: 0px">
+    Master 2 : Biomedical MRI course
+  </p>
+</div>
+```
 
 Welcome to the *Master 2 : Biomedical MRI* course
 offered by Aurélien Trotier at university of Bordeaux
 
-~~~
-<h2>Table of Contents</h2>
-~~~
-\tableofcontents
 
 ## Goals
 The goal of this website is to give you an advanced formation about MRI physics, pulse sequence development and reconstruction focused on reusable technical skills.
