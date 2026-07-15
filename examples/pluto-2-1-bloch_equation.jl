@@ -99,7 +99,7 @@ It is possible to use a $4x4$ version, called homogeneous, that greatly simplify
 
 $$\begin{equation}
 A_{4 \times 4} = \begin{bmatrix}
-A_{3x3} & B_{3x3}\\
+A_{3x3} & B_{3x1}\\
 0 & 1
 \end{bmatrix}
 = \begin{bmatrix}
@@ -1161,7 +1161,7 @@ md"""
 green_folded("Answer",
 md"""
  1. The green curves follow the magnitude of a sinc function. 
- 2. This clear phenomenon can be The fourier transform of a 
+ 2. This phenomenon is due to the fact that we observe a random choice of off-resonant isochromate +/- 15 Hz. With sufficient isochromate it should looks like a box function and it's Fourier transform is a sinc function.
 """)
 
 # ╔═╡ 484d1abc-0b1c-46a4-95aa-0fed3e124db9
